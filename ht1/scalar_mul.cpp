@@ -11,7 +11,7 @@ using namespace::std;
 
 float dot_sse(const float* x, const float* y, const long& len) {
     float inner_prod = 0;
-    __m128 xn, yn; //Declare two variables stored in the 128-bit special register of SSE
+    __m128 xn, yn;
     __m128 acc = _mm_setzero_ps(); // Declare a variable stored in a 128-bit special register in SSE to store the result of X+Y, the initial value is 0
     float temp[4];//Store the parameters of the intermediate variables
 
